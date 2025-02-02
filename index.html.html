@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buat nanaaaa ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #800000, #ff4d4d, #ffcccb);
+            color: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+            animation: bounce 1.5s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        .photo-gallery img {
+            width: 120px;
+            height: 120px;
+            margin: 10px;
+            border-radius: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.3);
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+        }
+        .emoji {
+            font-size: 35px;
+            margin: 15px;
+            animation: spin 3s infinite linear;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .music {
+            margin-top: 20px;
+        }
+        .heart {
+            position: absolute;
+            animation: float 4s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(-20px); opacity: 0.7; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .hidden-text {
+            font-size: 24px;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 2s;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💖 allooo nanaaa 💖</h1>
+        <p>web nyaa ada lagu nyaaa play dulu di bawah 😜</p>
+        <div class="photo-gallery">
+            <img src="alama.jpg" alt="Foto Pacar">
+            <img src="wadoh.jpg" alt="Foto Pacar">
+            <img src="uhuy.jpg" alt="Foto Pacar">
+            <img src="anjay.jpg" alt="Foto Pacar">
+        </div>
+        <p class="emoji">😝😝😝</p>
+        <div class="music">
+            <audio controls autoplay loop>
+                <source src="ihiy.mp3" type="audio/mpeg">
+                Browsermu tidak mendukung audio tag.
+            </audio>
+        </div>
+        <button onclick="openSurprise()">Klik untuk kejutan 💝</button>
+    </div>
+    <script>
+        function createHearts() {
+            for (let i = 0; i < 20; i++) {
+                let heart = document.createElement("div");
+                heart.innerHTML = "❤️";
+                heart.classList.add("heart");
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.top = Math.random() * 100 + "vh";
+                heart.style.fontSize = Math.random() * 40 + 10 + "px";
+                heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+                document.body.appendChild(heart);
+            }
+        }
+        createHearts();
+        
+        function openSurprise() {
+            let surpriseWindow = window.open("", "_blank", "width=400,height=300");
+            surpriseWindow.document.write(`
+                <html>
+                <head>
+                    <title>taraaaaaaa hehehe 💖</title>
+                    <style>
+                        body {
+                            background-color: pink;
+                            text-align: center;
+                            font-family: Arial, sans-serif;
+                            font-size: 24px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 100vh;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <p>💕 Alloo alooo aku pilih foto yang di atas  krnaa lucu lucuuu wkkww iyaa tauuu foto kotak kotak abis nyaa kamuu sii sekalinya foto yang isinya cuman 1 malah langsung kamu apuss makasiii yaa udaaa mauu di ajak aku mainn oo iyaaa ini isi nyaa bisa bedaa bedaaa jadii bisa berubah ubahh.jangan mikir aku kurang kerjaan atau buang waktu buatbuat kaya ginii yaaa justruu akuu bisa belajar dan buat web yang simpel simpel kaya giniii wkkwkkwkw ehh tauu ngga sebenrnyaa kemaren aku uda mau nyerah tapii kata kamu kan kamuu mauu liatt dan rama juga maksa buat liaat wkwkwkwk yaudaa dehh akuuu lanjutinn eh ternaya berhasilll wkkwkwkwkw yauda la segini ajaa aku bingung apa lagii papayyyy 💕</p>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</body>
+</html>
